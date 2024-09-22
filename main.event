@@ -1,4 +1,4 @@
-#define FreeSpace 0x7FF0A4
+#define FreeSpace 0x800000
 
 ORG FreeSpace
     #include "Wizardry/data.event"

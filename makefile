@@ -48,6 +48,8 @@ ifneq (,$(TOOLCHAIN))
 	export PATH := $(TOOLCHAIN)/bin:$(PATH)
 endif
 
+CONFIG_LONG_CALL ?= 1
+
 ifeq ($(CONFIG_LONG_CALL), 1)
 	LYN_LONG_CALL := -longcalls
 	GCC_LONG_CALL := -mlong-calls
