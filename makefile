@@ -15,6 +15,10 @@ FE6_SYM  := $(LIB_DIR)/reference/fe6.sym
 WIZARDRY_DIR := $(MK_DIR)Wizardry
 HACK_DIRS := $(WIZARDRY_DIR)
 
+CONFIG_DIR := $(MK_DIR)include/configs
+RAM_REF    := $(CONFIG_DIR)/memmap.s
+EXT_REF    := $(CONFIG_DIR)/user-defined.s
+
 all:
 	@$(MAKE) pre_build	|| exit 1
 	@$(MAKE) chax		|| exit 1
