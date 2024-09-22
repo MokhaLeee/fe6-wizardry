@@ -1,0 +1,16 @@
+#include "Source/EarlyIntro.lyn.event"
+
+PUSH
+    /* W.I.P. */
+    ORG 0x5C4A34 + 8 * 3 // ProcScr_GameController + 8*5
+        PROC_NEW_CHILD_BLOCKING(ProcScr_GameIntroEarlyUI)
+        PROC_YEILD
+        PROC_GOTO(0x3)
+
+    /* Disable fade in titlescreen IDLE */
+    ORG 0x6921E8 + 8 * 5
+        PROC_YEILD
+
+    ORG 0x09B304
+        SHORT 0
+POP

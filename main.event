@@ -1,3 +1,7 @@
+#include "EAstdlib.event"
+#include "Extensions/Hack Installation.txt"
+#include "Extensions/ProcDefinitions.txt"
+
 #define FreeSpace 0x800000
 
 ORG FreeSpace
