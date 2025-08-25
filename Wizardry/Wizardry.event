@@ -1,1 +1,3 @@
+#include "Common/DebugKit/DebugKit.event"
+#include "Common/StatusGetter/StatusGetter.event"
 #include "Misc/ForceDeploy/ForceDeploy.event"

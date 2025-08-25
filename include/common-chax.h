@@ -2,6 +2,8 @@
 
 #define CHAX 1
 
+#include "debug-kit.h"
+
 /* Add a magic for FEB PATCH to auto find the pointer */
 #define FEB_IDENTIFIER(PTR) const char FEB_##PTR##_Identifier[] = #PTR
 
