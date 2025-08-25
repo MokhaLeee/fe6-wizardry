@@ -1,4 +1,8 @@
-#define FreeSpace 0x7FF0A4
+#include "EAstdlib.event"
+#include "Extensions/Hack Installation.txt"
+#include "Extensions/ProcDefinitions.txt"
+
+#define FreeSpace 0x800000
 
 ORG FreeSpace
     #include "Wizardry/data.event"
