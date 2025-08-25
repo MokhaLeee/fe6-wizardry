@@ -1,5 +1,6 @@
 #pragma once
 
+#include "prelude.h"
 #include <string.h>
 #include <stdarg.h>
 
@@ -59,3 +60,8 @@ void mgba_close(void);
 void nocashgba_print(const char *buf);
 
 void kprintf_test(void);
+
+/**
+ * Always print to STDOUT regardless on debug config
+ */
+#define fmt_printf(format, ...) printf("(%s): "format, __func__, ##__VA_ARGS__)
