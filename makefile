@@ -135,6 +135,9 @@ ASFLAGS := $(ARCH) $(INC_FLAG)
 CDEPFLAGS = -MMD -MT "$*.o" -MT "$*.asm" -MF "$(CACHE_DIR)/$(notdir $*).d" -MP
 SDEPFLAGS = --MD "$(CACHE_DIR)/$(notdir $*).d"
 
+EXT_REF := include/link/ext-ref.s
+RAM_REF := include/link/ram-ref.s
+
 LYN_REF := $(EXT_REF:.s=.o) $(RAM_REF:.s=.o) $(FE6_REF)
 
 %.lyn.event: %.o $(LYN_REF) $(FE6_SYM)
