@@ -19,3 +19,7 @@ SET_DATA UsedFreeRamSpaceTop, FreeRamSpaceBottom
     .set UsedFreeRamSpaceTop, UsedFreeRamSpaceTop - \size
     SET_DATA \name, UsedFreeRamSpaceTop
 .endm
+
+_kernel_malloc stdio_init_magic, 4
+_kernel_malloc mgba_print_level, 4
+_kernel_malloc __stdio_FILEs, 0x10
