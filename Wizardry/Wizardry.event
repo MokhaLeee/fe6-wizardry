@@ -1,6 +1,9 @@
 #include "Essentials/BanimHpDrainFix/BanimHpDrainFix.event"
+#include "Essentials/CharacterEndingFix/CharacterEndingFix.event"
+
 #include "Common/DebugKit/DebugKit.event"
 #include "Common/StatusGetter/StatusGetter.event"
+
 #include "Misc/ForceDeploy/ForceDeploy.event"
 #include "Misc/UnitSpriteFlip/UnitSpriteFlip.event"
 #include "Misc/GameIntrofx/GameIntrofx.event"
