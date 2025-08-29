@@ -5,6 +5,7 @@ MK_DIR    := $(dir $(MK_PATH))
 
 MAIN    := $(MK_DIR)main.event
 FE6_CHX := $(MK_DIR)fe6-chax.gba
+CHX_SYM := $(MK_DIR)fe6-chax.sym
 FE6_GBA := $(MK_DIR)fe6.gba
 
 TOOL_DIR := $(MK_DIR)Tools
@@ -103,6 +104,7 @@ $(FE6_CHX): $(MAIN) $(FE6_GBA) $(FE6_SYM) $(shell $(EA_DEP) $(MAIN) -I $(EA_DIR)
 	@echo "[GEN]	$@"
 	@cp -f $(FE6_GBA) $(FE6_CHX)
 	@$(EA) $(EA_FLAG) -input:$(MAIN) -output:$(FE6_CHX) --nocash-sym || { rm -f $(FE6_CHX); exit 1; }
+	@cat $(FE6_SYM) >> $(CHX_SYM)
 
 CHAX_SYM := $(FE6_CHX:.gba=.sym)
 CHAX_REFS := $(FE6_CHX:.gba=.ref.s)
