@@ -23,3 +23,4 @@ SET_DATA UsedFreeRamSpaceTop, FreeRamSpaceBottom
 _kernel_malloc stdio_init_magic, 4
 _kernel_malloc mgba_print_level, 4
 _kernel_malloc __stdio_FILEs, 0x10
+_kernel_malloc gFlashInfo, 0x10
