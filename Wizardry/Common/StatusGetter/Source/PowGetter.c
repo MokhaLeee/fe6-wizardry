@@ -2,7 +2,7 @@
 #include "unit.h"
 #include "item.h"
 #include "common-chax.h"
-
+void DebugScreenExample(void);
 LYN_REPLACE_CHECK(GetUnitPower);
 int GetUnitPower(struct Unit * unit)
 {
