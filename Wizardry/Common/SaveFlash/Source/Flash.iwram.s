@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-@ void flash_memcpy(volatile unsigned char *dst, const volatile unsigned char *src, size_t size) 
+@ void flash_memcpy(volatile unsigned char *dst, const volatile unsigned char *src, size_t size)
 ARM_FUNC_START _flash_memcpy
 _flash_memcpy:
 1:
@@ -10,7 +10,7 @@ _flash_memcpy:
 	bne 1b
 	bx lr
 
-@ static unsigned int flash_absmemcmp(const volatile unsigned char *dst, const volatile unsigned char *src, size_t size)
+@ unsigned int flash_absmemcmp(const volatile unsigned char *dst, const volatile unsigned char *src, size_t size)
 ARM_FUNC_START _flash_absmemcmp
 _flash_absmemcmp:
 1:

@@ -4,7 +4,7 @@
 #include "Common/DebugKit/DebugKit.event"
 #include "Common/StatusGetter/StatusGetter.event"
 #include "Common/DebugScreen/DebugScreen.event"
-// #include "Common/SaveFlash/SaveFlash.event"
+#include "Common/SaveFlash/SaveFlash.event"
 
 #include "Misc/ForceDeploy/ForceDeploy.event"
 #include "Misc/UnitSpriteFlip/UnitSpriteFlip.event"

@@ -24,3 +24,10 @@ _kernel_malloc stdio_init_magic, 4
 _kernel_malloc mgba_print_level, 4
 _kernel_malloc __stdio_FILEs, 0x10
 _kernel_malloc gFlashInfo, 0x10
+
+/**
+ * IWRAM
+ * Free: 03003578 - 03003780
+ */
+SET_DATA ARM_flash_memcpy, 0x03003578
+SET_DATA ARM_flash_absmemcmp, 0x0300358C
